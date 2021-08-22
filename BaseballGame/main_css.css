@@ -1,0 +1,106 @@
+body {
+  margin: auto;
+  padding: auto;
+  position: relative;
+  box-sizing: border-box;
+  width: 760px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul {
+  height: 100%;
+  width: 35%;
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#start_btn {
+  height: 1em;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  margin-top: 15%;
+}
+
+#game_theme {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  background-color: lightskyblue;
+  border: solid 1px black;
+}
+
+#main_title {
+  font-size: 1.5em;
+}
+
+/* Container CSS*/
+#container {
+  width: 100%;
+  height: 85%;
+  border: solid 1px black;
+  background-color: lightslategrey;
+}
+
+#form_div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#confirm_btn {
+  height: 100%;
+}
+
+#confirm_btn input {
+  height: 100px;
+  width: 60px;
+}
+
+.answer_word {
+  margin-top: 5px;
+  height: 30px;
+  width: 50px;
+  font-size: 30px;
+  justify-self: end;
+}
+
+#footer div {
+  margin: 5px;
+}
+
+#confirm_btn :hover {
+  cursor: pointer;
+}
+
+#header :hover {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+#input_log {
+  margin-top: 15px;
+}

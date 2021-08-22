@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main_css.css" rel="stylesheet" type="text/css" />
+    <title>Text_BaseBall</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="game_theme">
+            <strong>BaseBall Game</strong>
+        </div>
+        <div id="header">
+            <div id="main_title" onclick="settingGame()">
+                <strong id="main_title_msg">Play</strong>
+            </div>
+        </div>
+        <div id="container">
+            <form id="answer_form" action="" method="POST">
+                <div id="form_div">
+                    <ul>
+                        <li>
+                            <input id="first_word" class="answer_word" type="text" maxlength="1"/>
+                        </li>
+                        <li>
+                            <input id="second_word" class="answer_word" type="text" maxlength="1"/>
+                        </li>
+                        <li>
+                            <input id="third_word" class="answer_word" type="text" maxlength="1"/>
+                        </li>
+                        <li>
+                            <input id="fourth_word" class="answer_word" type="text" maxlength="1"/>
+                        </li>
+                    </ul>
+                    <div id="inning_result">
+                        <strong id="inning_result_msg"></strong>
+                    </div>
+                    <div id="check_times">
+                        <strong id="check_times_msg">0 회</strong>
+                    </div>
+                    <div id="confirm_btn">
+                        <input type="button" value="결정" onclick="confirm_answer()"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="footer">
+            <div>
+                <div>
+                    <strong>규칙설명</strong>
+                </div>
+                <div>
+                    <span>*</span><span>게임을 시작하면 무작위로 선택 된 4개의 숫자를 10번의 시도안에 맞추는 게임입니다</span>
+                </div>
+                <div>
+                    <span>1.</span><span>숫자는 1 ~ 9 중에서 선택되며 중복되지 않습니다</span>
+                </div>
+                <div>
+                    <span>2.</span><span>입력한 숫자가 선택 된 숫자 안에 포함되어 있으나 자리가 맞지 않다면 볼을 선언합니다</span>
+                </div>
+                 <div>
+                    <span>3.</span><span>입력한 숫자가 선택 된 숫자 안에 포함되어 있고 자리까지 맞다면 스트라이크를 선언합니다</span>
+                 </div>
+                 <div>
+                    <span>4.</span><span>입력한 4개의 숫자를 자리까지 모두 다 맞추면 홈런이 되며 게임은 종료됩니다</span>
+                 </div>
+            </div>
+            <div id="input_log"></div>
+        </div>
+    </div>
+    <!--Script Section-->
+    <script src="main_script.js"></script>
+</body>
+</html>
